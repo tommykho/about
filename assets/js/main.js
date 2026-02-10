@@ -1,77 +1,67 @@
 (function($) {
-  
-  "use strict";  
+
+  "use strict";
 
   $(window).on('load', function() {
 
-     /* Page Loader active
+    /* Page Loader
     ========================================================*/
     $('#preloader').fadeOut();
 
-  // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
-        }
-    });
-
-    /* slicknav mobile menu active  */
-    $('.mobile-menu').slicknav({
-      prependTo: '.navbar-header',
-      parentTag: 'liner',
-      allowParentLinks: true,
-      duplicate: true,
-      label: '',
-      closedSymbol: '<i class="icon-arrow-right"></i>',
-      openedSymbol: '<i class="icon-arrow-down"></i>',
-    });
-
-    /* ==========================================================================
-    countdown timer
-    ========================================================================== */
-     jQuery('#clock').countdown('2023/12/31',function(event){
-      var $this=jQuery(this).html(event.strftime(''
-      +'<div class="time-entry days"><span>%-D</span> Days</div> '
-      +'<div class="time-entry hours"><span>%H</span> Hours</div> '
-      +'<div class="time-entry minutes"><span>%M</span> Minutes</div> '
-      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
-    });
-
-    /* WOW Scroll Spy
+    /* Sticky Nav
     ========================================================*/
-     var wow = new WOW({
-      //disabled for mobile
-        mobile: false
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop() > 100) {
+        $('.scrolling-navbar').addClass('top-nav-collapse');
+      } else {
+        $('.scrolling-navbar').removeClass('top-nav-collapse');
+      }
+    });
+
+    /* WOW Scroll Animations
+    ========================================================*/
+    var wow = new WOW({
+      mobile: false
     });
     wow.init();
 
-    // one page navigation 
-    $('.onepage-nev').onePageNav({
-            currentClass: 'active'
-    }); 
-
-    /* Back Top Link active
+    /* One Page Navigation
     ========================================================*/
-      var offset = 200;
-      var duration = 500;
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-          $('.back-to-top').fadeIn(400);
-        } else {
-          $('.back-to-top').fadeOut(400);
-        }
-      });
+    $('.onepage-nev').onePageNav({
+      currentClass: 'active'
+    });
 
-      $('.back-to-top').on('click',function(event) {
-        event.preventDefault();
+    /* Smooth Scroll for anchor links
+    ========================================================*/
+    $('a.page-scroll').on('click', function(event) {
+      event.preventDefault();
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
         $('html, body').animate({
-          scrollTop: 0
+          scrollTop: target.offset().top - 70
         }, 600);
-        return false;
-      });
+      }
+    });
 
-  });      
+    /* Back To Top
+    ========================================================*/
+    var offset = 300;
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > offset) {
+        $('.back-to-top').fadeIn(400);
+      } else {
+        $('.back-to-top').fadeOut(400);
+      }
+    });
+
+    $('.back-to-top').on('click', function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, 600);
+      return false;
+    });
+
+  });
 
 }(jQuery));
