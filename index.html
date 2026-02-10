@@ -1,401 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>tommykho.github.io - Coming Soon Template</title>
+    <title>Tommy Ho - Playground</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Off Canvas Menu -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Color Switcher -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vegas.min.css">
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
   </head>
   <body>
 
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <div class="menu-wrap">
-        <div class="menu navbar">
-          <div class="menu-list navbar-collapse">
-            <ul class="onepage-nev navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#header-wrap">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>                            
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-              </li>   
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>   
-            </ul>
-          </div>
-        </div> 
-        <button class="close-button" id="close-button"><i class="lni-close"></i></button>
-      </div>  
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar menu-bg">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="lni-menu"></span>
-              <span class="lni-menu"></span>
-              <span class="lni-menu"></span>
-            </button>
-            <a href="index.html" class="navbar-brand">tommykho.github.io</a>
-          </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item" id="open-button">
-                <a class="nav-link">
-                  <i class="lni-menu"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="mobile-menu">
-          <li>
-            <a href="#header-wrap">Home</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#team">Team</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-      </nav>
-      <!-- Navbar End -->
-    </header>
-    
-    <!-- Intro Section Start -->
-    <section class="intro">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="heading-count">
-              <h2>Coming Soon</h2>
-              <p>Our exciting new website is coming soon! Check back later...</p>
+        <a href="#hero" class="navbar-brand">Tommy Ho</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="lni-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#playground">Playground</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-6">
+            <div class="hero-img wow fadeInLeft" data-wow-delay="0.2s">
+              <img src="assets/img/profile.png" alt="Tommy Ho" class="img-fluid profile-photo">
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="row countdown justify-content-center">
-              <div id="clock" class="time-count"></div>
+          <div class="col-lg-7 col-md-6">
+            <div class="hero-content wow fadeInRight" data-wow-delay="0.4s">
+              <p class="hero-greeting">Hello, I'm</p>
+              <h1 class="hero-name">Tommy Ho</h1>
+              <h2 class="hero-title">Engineer & Builder</h2>
+              <p class="hero-bio">
+                I enjoy building things that live on the internet and tinkering with ideas that bridge the physical and digital world. Welcome to my playground.
+              </p>
+              <div class="hero-cta">
+                <a href="#playground" class="btn btn-common page-scroll">View Playground</a>
+                <a href="#contact" class="btn btn-outline page-scroll">Get in Touch</a>
+              </div>
+              <div class="hero-social">
+                <a href="https://github.com/tommykho" target="_blank" aria-label="GitHub"><i class="lni-github"></i></a>
+                <a href="https://linkedin.com/in/tommykho" target="_blank" aria-label="LinkedIn"><i class="lni-linkedin-filled"></i></a>
+                <a href="mailto:tommyho510@gmail.com" aria-label="Email"><i class="lni-envelope"></i></a>
+              </div>
             </div>
-            <a href="#contact" class="btn btn-common">Contact Us</a>
-            <a href="#team" class="btn btn-border">About Us</a>
-            <div class="social mt-4">
-              <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-              <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-              <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-              <a class="google" href="#"><i class="lni-google-plus"></i></a>
-            </div>
-            <a href="#services" class="target-scroll page-scroll"><i class="lni-chevron-down"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- Intro Section End -->
 
-    <section id="services" class="section-padding" >
+    <!-- About Section -->
+    <section id="about" class="section-padding">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-8 col-xs-12 text-center">
-            <h6 class="subtitle">
-              What We Do
-            </h6>
-            <h2 class="section-title">
-              We Provide Creative Solutions
-            </h2>
-            <div class="section-info">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla neque 
-              tempore rerum dolore accusamus, eum, officia nostrum sequi explicabo aspernatur asperiores.
-            </div>
-          </div>            
-        </div>
-        
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-brush"></i>
-              </div>
-              <h3><a href="#">Web Design</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores incidunt laboriosam harum, voluptatem fugiat perspiciatis.</p>
-            </div>
-          </div> 
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="300">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-mobile"></i>
-              </div>
-              <h3><a href="#">App Development</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores incidunt laboriosam harum, voluptatem fugiat perspiciatis.</p>
-            </div>
-          </div> 
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-bullhorn"></i>
-              </div>
-              <h3><a href="#">Internet Marketing</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores incidunt laboriosam harum, voluptatem fugiat perspiciatis.</p>
-            </div>
-          </div>
-         </div>
-      </div>
-    </section>
-
-    <!-- Team Section Start -->
-    <section id="team" class="section-padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-8 col-xs-12 text-center">
-            <h6 class="subtitle">
-              Meet Our
-            </h6>
-            <h2 class="section-title">
-              Our awesome team
-            </h2>
-            <div class="section-info">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla neque 
-              tempore rerum dolore accusamus, eum, officia nostrum sequi explicabo aspernatur asperiores.
-            </div>
-          </div>            
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- Team Item Starts -->
-            <div class="team-item text-center">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Emilly Williams</a></h3>
-                <p>Product Designer</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- Team Item Starts -->
-            <div class="team-item text-center">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Patric Green</a></h3>
-                <p>Front-end Developer</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- Team Item Starts -->
-            <div class="team-item text-center">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Paul Kowalsy</a></h3>
-                <p>Lead Designer</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- Team Item Starts -->
-            <div class="team-item text-center">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-04.jpg" alt="">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Jhon Doe</a></h3>
-                <p>Back-end Developer</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-8 col-xs-12 text-center">
-            <h6 class="subtitle">
-              Connect With Us
-            </h6>
-            <h2 class="section-title">
-              Get in Touch
-            </h2>
-            <div class="section-info">
-              Lorem ipsum dolor sit amet, ut consul mediocrem abhorreant cum. Id eum dolores.
-              Delicatissimi ne pri modo accusamus. Augue vitae primis antiopam nec ex rationibus.
-            </div>
-          </div>            
-        </div>
-        
-        <form>
-          <div class="row">
-            <!-- Contact form -->
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Your Name</label>
-                  <input type="text" class="form-control" id="name" name="email" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="col-md-6">
-                  <label>Your E-mail</label>
-                  <input type="email" class="form-control" id="email" name="email" required data-error="Please enter your Email">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>  
-              <div class="row">
-                <div class="col-md-12">
-                  <label>Your Message</label>
-                  <textarea class="form-control" rows="4" id="message" name="message" required data-error="Write your message"></textarea>
-                </div>
-              </div>
-              <!-- Submit Button -->
-              <div class="row">
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Contact info -->
-            <div class="col-md-4 contact-right">
-              <div class="contact-box">
-                <h4>Address</h4>
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="about-content wow fadeInUp" data-wow-delay="0.2s">
+              <h6 class="section-label">About</h6>
+              <h2 class="section-title">A bit about me</h2>
+              <div class="about-text">
                 <p>
-                  1900 Pico Blvd, New York <br> Centernial, colorado
+                  I'm an engineer who loves building things — from software to hardware and everything in between. This site is my personal playground where I experiment with ideas and share projects I find interesting.
+                </p>
+                <p>
+                  When I'm not coding or designing, you'll find me exploring new technologies, sketching out ideas on a whiteboard, or figuring out how to make something work just a little bit better.
                 </p>
               </div>
-              <div class="contact-box">
-                <h4>Call Us</h4>
-                <p>+48 123 456 789</p>
-              </div>
-              <div class="contact-box">
-                <h4>Say Hello</h4>
-                <p>
-                  <a href="#">info@example.com</a>
-                </p>
+
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="lni-code"></i></div>
+                  <h4>Development</h4>
+                  <p>Full-stack web development, scripting, and automation</p>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="lni-cog"></i></div>
+                  <h4>Engineering</h4>
+                  <p>Mechanical design, systems thinking, and problem solving</p>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="lni-bulb"></i></div>
+                  <h4>Prototyping</h4>
+                  <p>Rapid prototyping, CAD, and bringing ideas to life</p>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Contact Section End -->
-
-     <!-- Map Section Start -->
-    <section id="google-map-area">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div id="conatiner-map"></div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Map Section End -->
 
-    <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
+    <!-- Playground Section -->
+    <section id="playground" class="section-padding bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="footer-text text-center">
-              <ul class="social-icon">
-                <li>
-                  <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                </li>
-                <li>
-                  <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="lni-google-plus"></i></a>
-                </li>
-              </ul>
-              <p>Copyright © 2018 <a href="www.uideck.com"></a>| Crafted by <a href="#" target="_blank">UIdeck</a></p>
+          <div class="col-lg-8 col-md-10 mx-auto text-center">
+            <h6 class="section-label wow fadeInUp">Playground</h6>
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.1s">Things I've been building</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">
+              A collection of projects, experiments, and things I tinker with in my free time.
+            </p>
+          </div>
+        </div>
+
+        <div class="row project-grid">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="project-card">
+              <div class="project-icon"><i class="lni-website"></i></div>
+              <h3>Personal Site</h3>
+              <p>This site itself — a static playground built with HTML, CSS, and a little JavaScript. No frameworks, no fuss.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+              <a href="https://github.com/tommykho/about" target="_blank" class="project-link">
+                View Source <i class="lni-arrow-right"></i>
+              </a>
             </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="project-card">
+              <div class="project-icon"><i class="lni-cog"></i></div>
+              <h3>Project Two</h3>
+              <p>Description of another project or experiment. Replace this with your own content and links.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>API</span>
+              </div>
+              <a href="#" class="project-link">
+                Learn More <i class="lni-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="project-card">
+              <div class="project-icon"><i class="lni-layers"></i></div>
+              <h3>Project Three</h3>
+              <p>Description of a third project or experiment. Replace with real content when ready.</p>
+              <div class="project-tags">
+                <span>Hardware</span>
+                <span>IoT</span>
+              </div>
+              <a href="#" class="project-link">
+                Learn More <i class="lni-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- This & That Section -->
+    <section id="this-and-that" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto text-center">
+            <h6 class="section-label wow fadeInUp">This &amp; That</h6>
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.1s">A few things about me</h2>
+          </div>
+        </div>
+        <div class="row fun-facts">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="fact-item">
+              <i class="lni-coffee-cup"></i>
+              <h4>Coffee Drinker</h4>
+              <p>Fueled by caffeine and curiosity</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="fact-item">
+              <i class="lni-book"></i>
+              <h4>Always Learning</h4>
+              <p>There's always something new to explore</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="fact-item">
+              <i class="lni-map-marker"></i>
+              <h4>Based in USA</h4>
+              <p>Building from wherever there's wifi</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="fact-item">
+              <i class="lni-heart"></i>
+              <h4>Open Source</h4>
+              <p>Sharing is caring — most of my work is public</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto text-center">
+            <div class="contact-content wow fadeInUp" data-wow-delay="0.2s">
+              <h6 class="section-label light">Contact</h6>
+              <h2 class="section-title light">Let's connect</h2>
+              <p class="contact-text">
+                Have a question or want to work together? Feel free to reach out.
+              </p>
+              <a href="mailto:tommyho510@gmail.com" class="btn btn-common btn-lg">
+                Say Hello
+              </a>
+              <div class="contact-social">
+                <a href="https://github.com/tommykho" target="_blank" aria-label="GitHub"><i class="lni-github"></i></a>
+                <a href="https://linkedin.com/in/tommykho" target="_blank" aria-label="LinkedIn"><i class="lni-linkedin-filled"></i></a>
+                <a href="mailto:tommyho510@gmail.com" aria-label="Email"><i class="lni-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="footer-text">
+              &copy; 2025 Tommy Ho. Built with curiosity.
+            </p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- Footer Section End -->
 
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">
@@ -406,27 +272,16 @@
     <div id="preloader">
       <div class="loader" id="loader-1"></div>
     </div>
-    <!-- End Preloader -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Scripts -->
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/vegas.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
     <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-    <script src="assets/js/map.js"></script>
-    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAHBXD7TZUC8tEuXFrOSyxDeUo8hN8PtKM">
-    </script>
-      
+
   </body>
 </html>
