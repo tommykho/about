@@ -2,11 +2,39 @@
 
   "use strict";
 
+  /* Theme Toggle (runs immediately, before page load)
+  ========================================================*/
+  (function initTheme() {
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+
+    $(document).ready(function() {
+      var $icon = $('#theme-icon');
+
+      function updateIcon(t) {
+        $icon.text(t === 'dark' ? '\uD83C\uDF1B' : '\uD83C\uDF1E');
+      }
+      updateIcon(theme);
+
+      $('#theme-toggle').on('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcon(next);
+      });
+    });
+  })();
+
   $(window).on('load', function() {
 
-    /* Page Loader
+    /* Skeleton Loader — fade out then remove
     ========================================================*/
-    $('#preloader').fadeOut();
+    var $preloader = $('#preloader');
+    $preloader.addClass('fade-out');
+    setTimeout(function() { $preloader.remove(); }, 500);
 
     /* Sticky Nav
     ========================================================*/
@@ -18,12 +46,12 @@
       }
     });
 
-    /* WOW Scroll Animations
+    /* AOS Scroll Animations
     ========================================================*/
-    var wow = new WOW({
-      mobile: false
+    AOS.init({
+      once: true,
+      disable: 'mobile'
     });
-    wow.init();
 
     /* One Page Navigation
     ========================================================*/
