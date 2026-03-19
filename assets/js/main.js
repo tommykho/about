@@ -30,9 +30,11 @@
 
   $(window).on('load', function() {
 
-    /* Page Loader
+    /* Skeleton Loader — fade out then remove
     ========================================================*/
-    $('#preloader').fadeOut();
+    var $preloader = $('#preloader');
+    $preloader.addClass('fade-out');
+    setTimeout(function() { $preloader.remove(); }, 500);
 
     /* Sticky Nav
     ========================================================*/
