@@ -14,8 +14,7 @@
       var $icon = $('#theme-icon');
 
       function updateIcon(t) {
-        $icon.removeClass('lni-sun lni-night');
-        $icon.addClass(t === 'dark' ? 'lni-night' : 'lni-sun');
+        $icon.text(t === 'dark' ? '\uD83C\uDF1B' : '\uD83C\uDF1E');
       }
       updateIcon(theme);
 
@@ -45,12 +44,12 @@
       }
     });
 
-    /* WOW Scroll Animations
+    /* AOS Scroll Animations
     ========================================================*/
-    var wow = new WOW({
-      mobile: false
+    AOS.init({
+      once: true,
+      disable: 'mobile'
     });
-    wow.init();
 
     /* One Page Navigation
     ========================================================*/
