@@ -71,3 +71,9 @@ Created and maintained by **[Tommy Ho](mailto://tommyho510@gmail.com)**
 ## License
 
 This code is released under [The GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+## Support
+
+If you find this useful, consider buying me a coffee!
+
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://paypal.me/tommykho)
