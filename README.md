@@ -39,8 +39,8 @@ Or simply open `index.html` directly in your browser.
 | Layer | Technology |
 |-------|-----------|
 | **Markup** | HTML5 — single `index.html` entry point |
-| **Styles** | CSS3 — Bootstrap 4.x + custom stylesheets |
-| **Scripts** | jQuery-based — no module bundler or transpiler |
+| **Styles** | CSS3 — Bootstrap 4.6.2 (CDN) + custom stylesheets |
+| **Scripts** | jQuery 3.7.1 (CDN) — no module bundler or transpiler |
 | **Fonts** | Google Fonts (Montserrat, Open Sans) + LineIcons |
 | **Animations** | AOS (Animate On Scroll) |
 | **Hosting** | GitHub Pages — auto-deploys from `main` branch |
@@ -58,7 +58,8 @@ Or simply open `index.html` directly in your browser.
 - **Dark / Light mode** — toggle with 🌞/🌛, persists via `localStorage`, respects OS preference
 - **AOS scroll animations** — elements animate on scroll with staggered delays
 - **Fully responsive** — breakpoints at 1199px, 991px, 767px, 480px
-- **Zero dependencies** — all libraries vendored as static files
+- **Skeleton preloader** — shimmer loading screen that mirrors the page layout
+- **CDN-powered** — jQuery, Bootstrap, Popper.js, AOS loaded via cdnjs; no vendored bulk
 
 ## Bugs and issues
 
