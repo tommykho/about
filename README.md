@@ -14,7 +14,7 @@ PLAYGROUND  ·  Portfolio & Experiments  ·  GitHub Pages
 
 ## What it does
 
-A static single-page personal portfolio and playground site. Clean, minimal CV-style one-pager featuring a hero section with profile photo, an about section with skills grid, a playground showcasing projects, and a contact section with social links.
+A static single-page personal portfolio and playground. Editorial, motion-driven one-pager: kinetic hero with arch portrait, story and skills, the three field-manual sites I'm building (Sun Tzu, Five Rings, Hopbit), a playground of side projects, and a contact panel. Light and dark themes.
 
 > No build tools. No package managers. Just HTML, CSS, and a little JavaScript.
 
@@ -38,28 +38,30 @@ Or simply open `index.html` directly in your browser.
 
 | Layer | Technology |
 |-------|-----------|
-| **Markup** | HTML5 — single `index.html` entry point |
-| **Styles** | CSS3 — Bootstrap 4.6.2 (CDN) + custom stylesheets |
-| **Scripts** | jQuery 3.7.1 (CDN) — no module bundler or transpiler |
-| **Fonts** | Google Fonts (Montserrat, Open Sans) + LineIcons |
-| **Animations** | AOS (Animate On Scroll) |
-| **Hosting** | GitHub Pages — auto-deploys from `main` branch |
+| **Markup** | HTML5 — single `index.html` |
+| **Styles** | Plain CSS — `assets/css/about.css` |
+| **Scripts** | Vanilla JS — `assets/js/about.js` |
+| **Fonts** | Instrument Serif, Bricolage Grotesque, JetBrains Mono, Shippori Mincho B1 (Google Fonts) |
+| **Icons** | Font Awesome 6 (cdnjs) |
+| **Hosting** | GitHub Pages |
 
 ## Projects
 
 | Project | Description | Stack |
 |---------|-------------|-------|
+| [**Sun Tzu · Modern Field Manual**](https://github.com/tommykho/suntze) | The Art of War as tactics for work and life, with a cited AI advisor | `Astro` `AI` |
+| [**Five Rings**](https://github.com/tommykho/fiverings) | Musashi's Book of Five Rings as modern tactics, with a Dojo Trial | `Astro` `AI` |
+| [**Hopbit**](https://github.com/tommykho/hopbit) | Micro incremental habits, with an AI habit coach | `Astro` `AI` |
 | [**Personal Site**](https://github.com/tommykho/about) | This site — a static playground built with HTML, CSS, and JS | `HTML` `CSS` `JS` |
 | [**Edge TTS**](https://github.com/tommykho/edgetts) | Windows desktop app for text-to-speech using Microsoft Edge's 400+ neural voices. Preview audio and export to MP3 — no Python required | `Python` `TTS` `Windows` |
 | [**IOT Cookbook**](https://github.com/tommykho/IOT-cookbook) | Cut-and-paste Arduino C++ and MicroPython scripts for ESP32, ESP8266, and ATmega32u4 — GIF players, internet radios, animated eyes, ROM tools | `Arduino` `ESP32` `IoT` |
 
 ## Features
 
-- **Dark / Light mode** — toggle with 🌞/🌛, persists via `localStorage`, respects OS preference
-- **AOS scroll animations** — elements animate on scroll with staggered delays
-- **Fully responsive** — breakpoints at 1199px, 991px, 767px, 480px
-- **Skeleton preloader** — shimmer loading screen that mirrors the page layout
-- **CDN-powered** — jQuery, Bootstrap, Popper.js, AOS loaded via cdnjs; no vendored bulk
+- **Light / dark themes** — follows the OS, toggle persists via `localStorage`
+- **Motion** — kinetic hero type, spinning badge, marquee, scroll reveals; honours reduced motion
+- **Sister-site cards** — Sun Tzu, Five Rings and Hopbit, each in its own palette
+- **No dependencies** — no Bootstrap, jQuery or AOS; one CSS and one JS file
 
 ## Bugs and issues
 
